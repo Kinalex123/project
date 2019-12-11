@@ -17,7 +17,7 @@ class MainWindow(QMainWindow, MyMainWindow):
     def show_answer(self):
         self.start_cost.input = self.text_cena.toPlainText(self)
         self.sale.input = self.text_skidka.toPlainText(self)
-        self.text_itog.SetText(str(self.start_cost - self.start_cost / 100 * self.sale))        
+        self.text_itog.SetText(str(self.start_cost / 100 * self.sale))        
         
 def main():
     app = QApplication(sys.argv)
